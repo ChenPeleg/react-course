@@ -14,3 +14,5 @@ jobs:
           # cache-dependency-path: './'
       - run: ls
       - run: echo "hi there"
+      - run: npm install
+      - run: npm test
