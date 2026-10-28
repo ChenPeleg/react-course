@@ -16,16 +16,18 @@ jobs:
       - run: echo "hi there"
       - run: npm install
       - name: Stav
-        run: cat .
+        run: cat ls
       - name: Or
-        run: cat .
+        run: cat ls
       - name: Yovel
-        run: cat .
+        run: cat ls
       - run: npm test
   depoly-to-prod:
      needs: test-code
      runs-on: ubuntu-latest
      steps: 
-        - run: echo "Deployed to prod"
+        - run: | 
+           echo "Deployed to prod 1 "
+           echo "Deployed to prod 2"
 
     
