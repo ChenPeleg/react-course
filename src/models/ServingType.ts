@@ -1,5 +1,3 @@
-import { stubInterface } from "./stubInterfact";
-
 export const ServingType = {
   Cup: "cup",
   Cone: "cone",

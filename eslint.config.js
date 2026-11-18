@@ -24,6 +24,7 @@ export default defineConfig([
       },
     },
     rules: {
+      curly: ["error", "all"],
       "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
     },
   },

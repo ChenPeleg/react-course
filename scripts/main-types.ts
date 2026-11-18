@@ -1,15 +1,13 @@
-import { useState } from "react";
-
-const myNumber: number = 10;
-const myString: string = "Hello, TypeScript!";
-const myBoolean: boolean = true;
+export const myNumber: number = 10;
+export const myString: string = "Hello, TypeScript!";
+export const myBoolean: boolean = true;
 
 interface Person {
   name: string;
   age: number;
 }
 
-const myArray: Array<Person> = [
+export const myArray: Array<Person> = [
   {
     name: "Alice",
     age: 30,
@@ -19,4 +17,4 @@ const myArray: Array<Person> = [
 function makeTupple<T>(value: T): [T, T] {
   return [value, value];
 }
-const result = makeTupple(5);
+export const result = makeTupple(5);

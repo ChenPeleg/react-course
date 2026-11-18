@@ -12,7 +12,7 @@ describe("isValidEmail", () => {
   });
   it("edge case", () => {
     expect(() => {
-      const result = isValidEmail(false as unknown as string);
+      isValidEmail(false as unknown as string);
     }).toThrowError();
   });
   // describe("edge cases", () => {

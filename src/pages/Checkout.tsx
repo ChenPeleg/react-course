@@ -39,7 +39,7 @@ export const Checkout = () => {
 
     const navigate = useNavigate();
 
-    const  [ cart, setCart]   = useState<Record<string, any>>({});
+    const  [ cart, setCart]   = useState<Record<string, unknown>>({});
     const [order, setOrder] = useState<Order>({
         name: '',
         email: '',
@@ -47,7 +47,7 @@ export const Checkout = () => {
         address: '',
         paymentMethod: ''
     });
-    const [validationErrors, setValidationErrors] = useState<ValidationErrors>({
+    const [, setValidationErrors] =useState<ValidationErrors>({
         name: '',
         email: '',
         phone: '',
@@ -98,6 +98,7 @@ export const Checkout = () => {
         setCheckoutState({ status: CheckoutStateType.Sending, message: '' });
         try {
             const orderWithItems = { ...order, items: cart };
+            console.log("Sending order: ", orderWithItems);
             setCart ({})
          
         } catch (error) {
