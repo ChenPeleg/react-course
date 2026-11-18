@@ -1,3 +1,3 @@
-let myVariable = 10;
+export let myVariable = 10;
 
-function someFunction() {}
+export function someFunction() {}
